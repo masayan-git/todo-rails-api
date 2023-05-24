@@ -26,7 +26,7 @@ module TodoApi
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://localhost:3000' # Next.jsアプリのオリジンを許可
+        origins '*'
     
         resource '*',
           headers: :any,
