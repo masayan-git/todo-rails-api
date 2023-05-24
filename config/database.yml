@@ -16,4 +16,7 @@ test:
 
 production:
   <<: *default
-  database: todo-rails-api-production
+  database: demo
+  username: demo
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  host: 35.243.107.90
