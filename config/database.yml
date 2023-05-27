@@ -5,6 +5,7 @@ default: &default
   username: demo
   password: demo
   host: db
+  port: 5432
 
 development:
   <<: *default
