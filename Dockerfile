@@ -10,7 +10,7 @@ COPY . /myapp
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
-EXPOSE 2000
+EXPOSE 8080
 
 # Start the main process.
 CMD ["sh", "-c", "rails db:migrate && rails server -b 0.0.0.0 -p ${PORT:-8080}"]
